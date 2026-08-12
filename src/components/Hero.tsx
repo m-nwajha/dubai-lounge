@@ -77,7 +77,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button as="link" href="#reserve" variant="solid" className="px-8">
+            <Button as="link" href="#contact" variant="solid" className="px-8">
               Reserve a Table
             </Button>
             <Button as="link" href="#menu" variant="outline" className="px-8">

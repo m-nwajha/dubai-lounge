@@ -9,11 +9,11 @@ import { Button } from "./ui/Button";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "#about" },
-  { label: "Menu", href: "#menu" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Events", href: "#events" },
-  { label: "Contact", href: "#contact" },
+  { label: "About Us", href: "/#about" },
+  { label: "Menu", href: "/#menu" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Favorites", href: "/#favorites" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export const LogoMark = () => (
@@ -91,7 +91,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <Button as="link" href="#reserve" className="hidden lg:inline-flex">
+          <Button as="link" href="/#contact" className="hidden lg:inline-flex">
             Reserve a Table
           </Button>
 
@@ -139,7 +139,7 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
-          <Button as="link" href="#reserve" className="mt-2 w-full">
+          <Button as="link" href="/#contact" className="mt-2 w-full">
             Reserve a Table
           </Button>
         </nav>

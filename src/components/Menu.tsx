@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Container } from './ui/Container';
 import { Button } from './ui/Button';
+import AnimatedSection from './ui/AnimatedSection';
 
 const MENU_ITEMS = [
   {
@@ -31,9 +32,9 @@ const MENU_ITEMS = [
 
 const Menu = () => {
   return (
-    <section className="bg-[#000] py-20">
+    <section className="bg-[#000] py-20" id='menu'>
       <Container variant="xl">
-        <div className="text-center">
+        <AnimatedSection direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
             Our Menu
           </p>
@@ -41,11 +42,16 @@ const Menu = () => {
             A Taste for Every Mood
           </h2>
           <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
-        </div>
+        </AnimatedSection>
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {MENU_ITEMS.map((item) => (
-            <div key={item.title} className="group gradient-border rounded-2xl p-px!">
+          {MENU_ITEMS.map((item, index) => (
+            <AnimatedSection
+              key={item.title}
+              direction="up"
+              delay={index * 0.15}
+              className="group gradient-border rounded-2xl p-px!"
+            >
               <div className="gradient-border__content flex flex-col">
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image
@@ -73,7 +79,7 @@ const Menu = () => {
                   </Button>
                 </div>
               </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </Container>

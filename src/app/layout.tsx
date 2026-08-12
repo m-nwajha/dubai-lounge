@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, Dancing_Script } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SmokeCursor from "@/components/ui/SmokeCursor";
+import CookieConsent from "@/components/CookieConsent";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -38,9 +41,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${dancingScript.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <SmokeCursor />
         <Header />
         {children}
         <Footer />
+        <CookieConsent />
+        <ScrollToTop />
       </body>
     </html>
   );

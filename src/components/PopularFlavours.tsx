@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Container } from "./ui/Container";
+import AnimatedSection from "./ui/AnimatedSection";
 
 // TODO: swap in a dedicated photo per flavour once available — reusing one placeholder for now.
 const FLAVOURS = [
@@ -13,9 +14,9 @@ const FLAVOURS = [
 
 const PopularFlavours = () => {
   return (
-    <section className="bg-black py-20">
+    <section className="bg-black py-20" id="favorites">
       <Container variant="xl">
-        <div className="text-center">
+        <AnimatedSection direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
             Popular Flavours
           </p>
@@ -23,12 +24,14 @@ const PopularFlavours = () => {
             Customer Favorites
           </h2>
           <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
-        </div>
+        </AnimatedSection>
 
         <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {FLAVOURS.map((flavour) => (
-            <div
+          {FLAVOURS.map((flavour, index) => (
+            <AnimatedSection
               key={flavour.name}
+              direction="up"
+              delay={index * 0.1}
               className="gradient-border rounded-xl p-[1px]! text-center transition-transform hover:skew-2"
             >
               <div className="gradient-border__content flex flex-col items-center gap-3 bg-[#171007]! px-4 py-3">
@@ -45,7 +48,7 @@ const PopularFlavours = () => {
                   {flavour.name}
                 </p>
               </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </Container>

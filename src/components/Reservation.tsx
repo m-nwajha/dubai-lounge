@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Container } from "./ui/Container";
 import { Button } from "./ui/Button";
 import { Modal } from "./ui/Modal";
+import AnimatedSection from "./ui/AnimatedSection";
 
 const HIGHLIGHTS = [
   "Priority seating",
@@ -18,7 +19,7 @@ const Reservation = () => {
   return (
     <section className="bg-black py-20 sm:py-24">
       <Container variant="xl">
-        <div className="gradient-border rounded-2xl">
+        <AnimatedSection direction="up" className="gradient-border rounded-2xl">
           <div className="gradient-border__content relative flex min-h-[280px] items-center overflow-hidden rounded-2xl">
             <Image
               src="/images/hero-bg.png"
@@ -63,7 +64,7 @@ const Reservation = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </Container>
 
       <Modal

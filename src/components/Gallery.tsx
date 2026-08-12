@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import { Container } from "./ui/Container";
+import AnimatedSection from "./ui/AnimatedSection";
 
 const GALLERY_ITEMS = [
   {
@@ -44,41 +45,43 @@ const Gallery = () => {
         </defs>
       </svg>
       <Container className="w-full">
-        <Swiper
-          className="!overflow-visible"
-          modules={[Autoplay, FreeMode]}
-          spaceBetween={20}
-          slidesPerView={"auto"}
-          loop={GALLERY_ITEMS.length > 5}
-          speed={6000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          freeMode={true}
-          breakpoints={{
-            480: { slidesPerView: 2 },
-            768: { slidesPerView: 2.4 },
-            1024: { slidesPerView: 4 },
-          }}
-        >
-          {GALLERY_ITEMS.map((item) => (
-            <SwiperSlide key={item.src}>
-              <div className="gallery-frame aspect-square">
-                <div className="gallery-frame__content">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(min-width: 1024px) 22vw, 60vw"
-                    className="object-cover"
-                  />
+        <AnimatedSection direction="up">
+          <Swiper
+            className="!overflow-visible"
+            modules={[Autoplay, FreeMode]}
+            spaceBetween={20}
+            slidesPerView={"auto"}
+            loop={GALLERY_ITEMS.length > 5}
+            speed={6000}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            freeMode={true}
+            breakpoints={{
+              480: { slidesPerView: 2 },
+              768: { slidesPerView: 2.4 },
+              1024: { slidesPerView: 4 },
+            }}
+          >
+            {GALLERY_ITEMS.map((item) => (
+              <SwiperSlide key={item.src}>
+                <div className="gallery-frame aspect-square">
+                  <div className="gallery-frame__content">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      sizes="(min-width: 1024px) 22vw, 60vw"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </AnimatedSection>
       </Container>
     </section>
   );

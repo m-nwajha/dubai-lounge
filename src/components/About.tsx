@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "./ui/Container";
 import { Button } from "./ui/Button";
+import AnimatedSection from "./ui/AnimatedSection";
 
 const BLOB_RADIUS =
   "rounded-[24px_60px_24px_60px] sm:rounded-[32px_90px_32px_90px] lg:rounded-[40px_120px_40px_120px]";
@@ -22,7 +23,7 @@ const About = () => {
 
       <Container variant="xl" className="relative z-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div>
+          <AnimatedSection direction="right">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
               About Us
             </p>
@@ -39,9 +40,9 @@ const About = () => {
             <Button as="link" href="#menu" variant="outline" className="mt-8">
               Learn More
             </Button>
-          </div>
+          </AnimatedSection>
 
-          <div className="grid grid-cols-2 gap-4 sm:gap-5">
+          <AnimatedSection direction="left" delay={0.15} className="grid grid-cols-2 gap-4 sm:gap-5">
             <div className="relative col-span-1 row-span-2">
               <div
                 className={`absolute -bottom-4 -left-4 h-full w-full border border-[#fbce6b]/25 ${BLOB_RADIUS}`}
@@ -83,7 +84,7 @@ const About = () => {
               </div>
               <div className="pointer-events-none absolute -right-4 -top-4 h-16 w-16 rounded-full bg-[radial-gradient(circle_at_top_right,#000,transparent_70%)]" />
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </Container>
     </section>

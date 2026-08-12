@@ -8,9 +8,9 @@ const WORKING_HOURS = [
 ];
 
 const LEGAL_LINKS = [
-  { label: 'Impressum', href: '#' },
-  { label: 'Datenschutzerklärung', href: '#' },
-  { label: 'AGB', href: '#' },
+  { label: 'Impressum', href: '/impressum' },
+  { label: 'Datenschutzerklärung', href: '/datenschutz' },
+  { label: 'AGB', href: '/AGB' },
 ];
 
 const SOCIAL_LINKS = [

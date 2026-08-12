@@ -1,4 +1,5 @@
 import { Container } from "./ui/Container";
+import AnimatedSection from "./ui/AnimatedSection";
 
 const OFFERINGS = [
   {
@@ -60,7 +61,7 @@ const Offerings = () => {
       <div className="absolute top-0 left-0 right-0 mx-auto h-[2px] w-[50%] bg-gradient-to-r from-transparent via-[#37270f] to-transparent" />
 
       <Container variant="xl">
-        <div className="text-center">
+        <AnimatedSection direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
             What We Offer
           </p>
@@ -68,11 +69,16 @@ const Offerings = () => {
             Indulge in Our Signature Experience
           </h2>
           <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
-        </div>
+        </AnimatedSection>
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {OFFERINGS.map((item) => (
-            <div className="gradient-border-glow before:p-[1px]! rounded-xl overflow-hidden  bg-[#0c0b07] p-8 text-center" key={item.title}>
+          {OFFERINGS.map((item, index) => (
+            <AnimatedSection
+              key={item.title}
+              direction="up"
+              delay={index * 0.15}
+              className="gradient-border-glow before:p-[1px]! rounded-xl overflow-hidden bg-[#0c0b07] p-8 text-center"
+            >
               <div className="gradient-border-glow__content">
                 <span className="mx-auto flex items-center justify-center text-[#fbce6b]">
                   <svg
@@ -92,7 +98,7 @@ const Offerings = () => {
                   {item.subtitle}
                 </p>
               </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </Container>
