@@ -74,12 +74,16 @@ body {
   }
 }
 
-
 .gradient-border {
   position: relative;
   overflow: hidden;
   padding: 2px;
-  background: linear-gradient(135deg, #71481f91 0%, #daad6691 50%, #71481f91 100%);
+  background: linear-gradient(
+    135deg,
+    #71481f91 0%,
+    #daad6691 50%,
+    #71481f91 100%
+  );
 }
 
 .gradient-border__content {
@@ -90,3 +94,34 @@ body {
   background: #000;
 }
 
+/* Dedicated frame for the gallery's slanted cards — clip-path polygons can't
+   use border-radius:inherit, so the shape is repeated on both layers. */
+.gallery-frame {
+  position: relative;
+  padding: 3px;
+  clip-path: url(#gallery-clip-path);
+  background: conic-gradient(
+    from var(--gradient-angle),
+    transparent 0deg,
+    #f7c463 60deg,
+    transparent 140deg,
+    #b9852f 220deg,
+    transparent 300deg,
+    #f7c463 360deg
+  );
+  animation: gradient-spin 4s linear infinite;
+}
+
+.gallery-frame__content {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  clip-path: url(#gallery-clip-path);
+  background: #000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-frame {
+    animation: none;
+  }
+}
