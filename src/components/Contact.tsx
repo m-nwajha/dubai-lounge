@@ -85,7 +85,7 @@ const Contact = () => {
           </AnimatedSection>
 
           <AnimatedSection direction="left" delay={0.15} className="h-full">
-            <div className="gradient-border h-90 rounded-2xl lg:h-full">
+            <div className="gradient-border h-[360px] rounded-2xl lg:h-full">
               <div className="gradient-border__content h-full overflow-hidden rounded-2xl">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.6657111923014!2d10.367277775757612!3d52.04940107096577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a54517451c2a61%3A0x901716de815935e5!2sAn%20d.%20Erzbahn%208%2C%2038259%20Bad%2C%20Germany!5e0!3m2!1sen!2s!4v1786537794843!5m2!1sen!2s"

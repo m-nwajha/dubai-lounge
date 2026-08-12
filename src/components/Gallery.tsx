@@ -47,7 +47,7 @@ const Gallery = () => {
       <Container className="w-full">
         <AnimatedSection direction="up">
           <Swiper
-            className="!overflow-visible"
+            className="!overflow-visible min-h-[250px] md:min-h-[300px]"
             modules={[Autoplay, FreeMode]}
             spaceBetween={20}
             slidesPerView={"auto"}
