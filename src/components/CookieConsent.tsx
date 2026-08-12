@@ -31,7 +31,7 @@ const CookieConsent = () => {
   if (!mounted || !visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 w-3xl mx-auto z-[999] border-t border-[#fbce6b]/20 bg-[#0a0905]/95 px-4 py-6 backdrop-blur-md sm:px-6">
+    <div className="fixed bottom-0 left-0 right-0 w-full lg:w-[60%] mx-auto z-[999] border-t border-[#fbce6b]/20 bg-[#0a0905]/95 px-4 py-6 backdrop-blur-md sm:px-6">
       <div className="mx-auto max-w-3xl">
         <div className="flex flex-col items-center justify-between gap-5 sm:flex-row">
           <div className="max-w-3xl text-center sm:text-left">
