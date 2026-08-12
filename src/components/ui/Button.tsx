@@ -31,7 +31,7 @@ const VARIANT_CLASSES: Record<ButtonVariant, string> = {
 };
 
 const BASE_CLASSES =
-  'inline-flex items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold uppercase tracking-wide transition';
+  'inline-flex items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold uppercase tracking-wide transition cursor-pointer';
 
 export const Button = (props: ButtonProps) => {
   const classes = CN(BASE_CLASSES, VARIANT_CLASSES[props.variant ?? 'solid'], props.className);

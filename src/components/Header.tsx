@@ -16,7 +16,7 @@ const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-const LogoMark = () => (
+export const LogoMark = () => (
   <svg
     viewBox="0 0 32 40"
     className="h-8 w-auto shrink-0 text-[#fbce6b]"

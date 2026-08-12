@@ -29,7 +29,7 @@ const PopularFlavours = () => {
           {FLAVOURS.map((flavour) => (
             <div
               key={flavour.name}
-              className="gradient-border rounded-xl p-[1px]! text-center transition-colors"
+              className="gradient-border rounded-xl p-[1px]! text-center transition-transform hover:skew-2"
             >
               <div className="gradient-border__content flex flex-col items-center gap-3 bg-[#171007]! px-4 py-3">
                 <div className="relative h-20 w-20 overflow-hidden rounded-full">

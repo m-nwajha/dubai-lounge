@@ -59,8 +59,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="gradient-border h-56 w-[200px] rounded-2xl sm:h-72">
-              <div className="gradient-border__content ">
+            <div className="gradient-border h-56 w-full rounded-2xl sm:h-72 skew-2">
+              <div className="gradient-border__content">
                 <Image
                   src="/images/about-right-top.png"
                   alt="Shisha with rising smoke"
