@@ -31,7 +31,7 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   title: "Dubai Lounge",
-  description: "Premium shisha lounge, food & drinks in Dubai.",
+  description: "Deine Lounge in Salzgitter für Shisha, Drinks, leckere Speisen und entspannte Abende in stilvollem Ambiente.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

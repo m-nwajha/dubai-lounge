@@ -4,13 +4,13 @@ import AnimatedSection from "./ui/AnimatedSection";
 
 // TODO: swap in a dedicated photo per flavour once available — reusing one placeholder for now.
 const FLAVOURS = [
-  "Blue Mist",
-  "Love 66",
-  "Pina Colada",
-  "Grape Mint",
-  "Double Apple",
-  "Tropical",
-].map((name) => ({ name, src: "/images/favorites-icon1.png" }));
+  { name: "Black Nana", src: "/images/BlackNana.png" },
+  { name: "Love 66", src: "/images/Love66.png" },
+  { name: "Pina Colada", src: "/images/PinaColada.png" },
+  { name: "Traube Minze", src: "/images/TraubeMinze.png" },
+  { name: "Doppel Apfel", src: "/images/DoppelApfel.png" },
+  { name: "Tropical", src: "/images/Tropical.png" },
+];
 
 const PopularFlavours = () => {
   return (
@@ -18,10 +18,10 @@ const PopularFlavours = () => {
       <Container variant="xl">
         <AnimatedSection direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
-            Popular Flavours
+            Beliebte Sorten
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">
-            Customer Favorites
+            Unsere Shisha-Favoriten
           </h2>
           <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
         </AnimatedSection>

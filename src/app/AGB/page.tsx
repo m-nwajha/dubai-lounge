@@ -14,59 +14,67 @@ export default function AgbPage() {
           title: "1. Geltungsbereich",
           type: "paragraph",
           paragraph:
-            "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Tischreservierungen, Veranstaltungsbuchungen und Besuche der Dubai Lounge GmbH, Goseriede 6, 30159 Hannover, soweit nicht ausdrücklich etwas anderes vereinbart wurde.",
+            "Diese Allgemeinen Geschäftsbedingungen gelten für Reservierungen und Leistungen der Dubai Lounge gegenüber Gästen, soweit keine individuell abweichende Vereinbarung getroffen wurde.",
         },
         {
           title: "2. Reservierungen",
           type: "paragraph",
           paragraph:
-            "Tischreservierungen können über unsere Website, telefonisch oder persönlich vorgenommen werden. Eine Reservierung gilt erst mit unserer Bestätigung als verbindlich. Reservierte Tische werden bis zu 15 Minuten nach der vereinbarten Uhrzeit freigehalten.",
+            "Reservierungen können insbesondere telefonisch, per E-Mail, über die Website oder vor Ort angefragt werden. Eine Reservierung ist erst verbindlich, wenn sie von der Dubai Lounge bestätigt wurde. Wünsche zu bestimmten Tischen oder Sitzbereichen können berücksichtigt, aber nicht garantiert werden.",
         },
         {
-          title: "3. Stornierungen",
+          title: "3. Verspätung und Freigabe reservierter Plätze",
           type: "paragraph",
           paragraph:
-            "Reservierungen für kleinere Gruppen können bis zu 24 Stunden vor dem vereinbarten Termin kostenfrei storniert werden. Bei Gruppen- und Eventbuchungen ab 8 Personen behalten wir uns vor, bei kurzfristiger Absage oder Nichterscheinen eine Ausfallgebühr zu berechnen.",
+            "Kann eine Reservierung nicht rechtzeitig wahrgenommen werden, bitten wir um frühzeitige Mitteilung. Bei erheblicher Verspätung ohne Nachricht kann die Dubai Lounge reservierte Plätze anderweitig vergeben, soweit dies unter Berücksichtigung der Umstände angemessen ist.",
         },
         {
-          title: "4. Altersbeschränkung",
+          title: "4. Preise und Zahlung",
           type: "paragraph",
           paragraph:
-            "Der Konsum von Shisha und alkoholischen Getränken in unserer Lounge ist gemäß den gesetzlichen Bestimmungen ausschließlich Gästen im entsprechenden Mindestalter gestattet. Wir behalten uns vor, einen gültigen Altersnachweis zu verlangen.",
+            "Es gelten die zum Zeitpunkt der Bestellung vor Ort ausgewiesenen Preise. Zahlungen sind mit den vor Ort angebotenen Zahlungsmitteln zu leisten. Gesetzliche Rechte bei fehlerhaften oder mangelhaften Leistungen bleiben unberührt.",
         },
         {
-          title: "5. Preise und Zahlung",
+          title: "5. Alters- und Jugendschutz",
           type: "paragraph",
           paragraph:
-            "Es gelten die zum Zeitpunkt des Besuchs ausgewiesenen Preise unserer Speise- und Getränkekarte. Die Zahlung erfolgt vor Ort in bar oder mit den angebotenen bargeldlosen Zahlungsmitteln.",
+            "Für Tabakwaren, nikotinhaltige Erzeugnisse, Shisha-Angebote und alkoholische Getränke gelten die gesetzlichen Alters- und Jugendschutzbestimmungen. Die Dubai Lounge ist berechtigt, einen geeigneten Altersnachweis zu verlangen und die Abgabe oder Nutzung zu verweigern, wenn die gesetzlichen Voraussetzungen nicht erfüllt sind.",
         },
         {
-          title: "Verhaltensregeln für unsere Gäste",
-          type: "list",
-          list: [
-            "Rücksichtnahme auf andere Gäste und das Personal",
-            "Befolgung der Rauch- und Sicherheitsrichtlinien der Lounge",
-            "Unverzügliche Meldung von Beschwerden oder Problemen an das Personal",
-            "Begleichung der Rechnung vor Verlassen der Lounge",
-          ],
-        },
-        {
-          title: "6. Hausrecht",
+          title: "6. Hausrecht und Verhalten",
           type: "paragraph",
           paragraph:
-            "Wir behalten uns vor, Gästen bei Verstoß gegen diese Bedingungen oder bei Störung des Betriebsablaufs den Aufenthalt in der Lounge zu untersagen.",
+            "Die Dubai Lounge übt das Hausrecht aus. Gäste haben Anweisungen des Personals zu beachten und sich so zu verhalten, dass andere Gäste, Mitarbeiter und die Einrichtung nicht beeinträchtigt oder gefährdet werden. Bei erheblichen Störungen, aggressivem Verhalten, Sachbeschädigungen oder Verstößen gegen gesetzliche Vorschriften kann der weitere Aufenthalt untersagt werden.",
         },
         {
-          title: "7. Haftung",
+          title: "7. Mitgebrachte Speisen und Getränke",
           type: "paragraph",
           paragraph:
-            "Für mitgebrachte Gegenstände unserer Gäste übernehmen wir keine Haftung, es sei denn, der Schaden beruht auf Vorsatz oder grober Fahrlässigkeit unsererseits.",
+            "Das Mitbringen und der Verzehr eigener Speisen und Getränke sind grundsätzlich nur mit vorheriger Zustimmung der Dubai Lounge gestattet.",
         },
         {
-          title: "8. Schlussbestimmungen",
+          title: "8. Schäden",
           type: "paragraph",
           paragraph:
-            "Es gilt das Recht der Bundesrepublik Deutschland. Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen hiervon unberührt.",
+            "Gäste haften nach den gesetzlichen Vorschriften für von ihnen schuldhaft verursachte Schäden an Einrichtung, Inventar oder sonstigem Eigentum der Dubai Lounge.",
+        },
+        {
+          title: "9. Haftung",
+          type: "paragraph",
+          paragraph:
+            "Die Dubai Lounge haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Schäden aus der Verletzung von Leben, Körper oder Gesundheit. Im Übrigen richtet sich die Haftung nach den gesetzlichen Vorschriften. Zwingende Verbraucherrechte bleiben unberührt.",
+        },
+        {
+          title: "10. Absage durch die Dubai Lounge",
+          type: "paragraph",
+          paragraph:
+            "Kann eine bestätigte Reservierung aufgrund unvorhersehbarer Umstände, höherer Gewalt, behördlicher Anordnungen oder anderer nicht zu vertretender Gründe nicht durchgeführt werden, wird die Dubai Lounge den Gast nach Möglichkeit unverzüglich informieren. Weitergehende gesetzliche Ansprüche bleiben unberührt.",
+        },
+        {
+          title: "11. Schlussbestimmungen",
+          type: "paragraph",
+          paragraph:
+            "Es gilt deutsches Recht unter Beachtung zwingender Verbraucherschutzvorschriften. Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleiben die übrigen Bestimmungen davon unberührt.",
         },
       ]}
     />

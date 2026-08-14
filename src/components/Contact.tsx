@@ -8,9 +8,9 @@ import { Button } from "./ui/Button";
 import AnimatedSection from "./ui/AnimatedSection";
 
 const SUBJECT_OPTIONS = [
-  { label: "General Inquiry", value: "general" },
-  { label: "Reservation", value: "reservation" },
-  { label: "Events & Groups", value: "events" },
+  { label: "Anliegen auswählen", value: "general" },
+  { label: "Reservierung", value: "reservation" },
+  { label: "Events & Gruppen", value: "events" },
   { label: "Feedback", value: "feedback" },
 ];
 
@@ -21,10 +21,10 @@ const Contact = () => {
       <Container variant="xl">
         <AnimatedSection direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
-            Contact Us
+            Kontakt
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">
-            Get in Touch
+            Wir freuen uns auf dich
           </h2>
           <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
         </AnimatedSection>
@@ -39,37 +39,37 @@ const Contact = () => {
               <TextField
                 id="contact-name"
                 name="name"
-                label="Full Name"
-                placeholder="Your name"
+                label="Name"
+                placeholder="Dein Name"
                 required
               />
               <TextField
                 id="contact-phone"
                 name="phone"
                 type="tel"
-                label="Phone"
-                placeholder="+971 ..."
+                label="Telefon"
+                placeholder="Deine Telefonnummer"
               />
             </div>
             <TextField
               id="contact-email"
               name="email"
               type="email"
-              label="Email"
-              placeholder="you@example.com"
+              label="E-Mail"
+              placeholder="Deine E-Mail-Adresse"
               required
             />
             <SelectField
               id="contact-subject"
               name="subject"
-              label="Subject"
+              label="Betreff"
               options={SUBJECT_OPTIONS}
             />
             <TextArea
               id="contact-message"
               name="message"
-              label="Message"
-              placeholder="Tell us how we can help..."
+              label="Nachricht"
+              placeholder="Wie können wir dir helfen?"
               rows={5}
               required
             />
@@ -79,7 +79,7 @@ const Contact = () => {
               variant="solid"
               className="mt-2 self-start"
             >
-              Send Message
+              Nachricht senden
             </Button>
             </form>
           </AnimatedSection>
@@ -88,7 +88,7 @@ const Contact = () => {
             <div className="gradient-border h-[360px] rounded-2xl lg:h-full">
               <div className="gradient-border__content h-full overflow-hidden rounded-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.6657111923014!2d10.367277775757612!3d52.04940107096577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a54517451c2a61%3A0x901716de815935e5!2sAn%20d.%20Erzbahn%208%2C%2038259%20Bad%2C%20Germany!5e0!3m2!1sen!2s!4v1786537794843!5m2!1sen!2s"
+                src="https://maps.google.com/maps?q=Albert-Schweitzer-Stra%C3%9Fe%2040,%2038226%20Salzgitter&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 title="Dubai Lounge location"
                 className="h-full w-full border-0"
                 loading="lazy"

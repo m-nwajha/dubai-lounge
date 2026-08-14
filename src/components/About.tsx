@@ -25,20 +25,21 @@ const About = () => {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <AnimatedSection direction="right">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
-              About Us
+              Über uns
             </p>
             <h2 className="mt-3 font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
-              Where Flavor
+              Genuss trifft
               <br />
-              Meets Relaxation
+              Entspannung
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-white/60 sm:text-base">
-              Dubai Lounge is more than a shisha bar &mdash; it&apos;s a
-              destination. From our handcrafted shisha blends to our delicious
-              food and signature drinks, we create moments worth sharing.
+              Die Dubai Lounge in Salzgitter steht für entspannte Abende, guten Geschmack
+              und ein stilvolles Ambiente. Genieße eine große Auswahl an Shishas,
+              erfrischenden Drinks, Cocktails sowie leckeren Speisen und Desserts &mdash;
+              der perfekte Ort für entspannte Stunden mit Freunden.
             </p>
             <Button as="link" href="#menu" variant="outline" className="mt-8">
-              Learn More
+              Mehr entdecken
             </Button>
           </AnimatedSection>
 

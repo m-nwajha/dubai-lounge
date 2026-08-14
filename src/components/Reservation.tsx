@@ -8,9 +8,9 @@ import { Modal } from "./ui/Modal";
 import AnimatedSection from "./ui/AnimatedSection";
 
 const HIGHLIGHTS = [
-  "Priority seating",
-  "Perfect for groups & events",
-  "Unforgettable nights",
+  "Lounge virtuell erkunden",
+  "Ambiente & Atmosphäre entdecken",
+  "Einen echten Rundumblick erhalten",
 ];
 
 const Reservation = () => {
@@ -32,13 +32,13 @@ const Reservation = () => {
 
             <div className="relative z-10 max-w-md px-6 py-10 sm:px-10">
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
-                Reservation
+                360° Virtual Tour
               </p>
               <h2 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl">
-                Reserve Your Table
+                Entdecke die Dubai Lounge
                 <br />
                 <span className="font-normal text-white/90">
-                  for an Exclusive Experience
+                  in 360°
                 </span>
               </h2>
 
@@ -60,7 +60,7 @@ const Reservation = () => {
                 onClick={() => setIsPanoramaOpen(true)}
                 className="mt-6"
               >
-                Reserve a Table
+                360° Tour starten
               </Button>
             </div>
           </div>

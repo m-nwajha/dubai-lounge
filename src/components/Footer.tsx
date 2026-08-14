@@ -3,8 +3,7 @@ import { Container } from './ui/Container';
 import { LogoMark } from './Header';
 
 const WORKING_HOURS = [
-  { days: 'Mo–Do', hours: '11:00–22:00 Uhr' },
-  { days: 'Feiertage', hours: ' 09:00–12:30 Uhr' },
+  { days: 'Info', hours: 'Bitte die tatsächlichen Öffnungszeiten eintragen' },
 ];
 
 const LEGAL_LINKS = [
@@ -65,8 +64,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-[0.9rem] leading-relaxed text-white/50">
-              Dubai&apos;s premier destination for shisha, fine dining and unforgettable
-              nights in a luxurious atmosphere.
+              Deine Lounge in Salzgitter für Shisha, Drinks, leckere Speisen und entspannte Abende in stilvollem Ambiente.
             </p>
           </div>
 
@@ -101,11 +99,11 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-[0.9rem] font-bold uppercase tracking-wide text-[#fbce6b]">Contact</p>
+            <p className="text-[0.9rem] font-bold uppercase tracking-wide text-[#fbce6b]">Kontakt</p>
             <ul className="mt-4 space-y-3 text-[0.9rem] text-white/50">
-              <li>Goseriede 6, 30159 Hannover</li>
-              <li>+971 4 123 4567</li>
-              <li>info@dubailounge.de</li>
+              <li>Albert-Schweitzer-Straße 40, 38226 Salzgitter</li>
+              <li>0172 9376230</li>
+              <li>info@dubai-lounge.net</li>
             </ul>
 
             <div className="mt-5 flex items-center gap-3">

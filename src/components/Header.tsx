@@ -9,11 +9,11 @@ import { Button } from "./ui/Button";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/#about" },
-  { label: "Menu", href: "/#menu" },
-  { label: "Gallery", href: "/#gallery" },
-  { label: "Favorites", href: "/#favorites" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Über Uns", href: "/#about" },
+  { label: "Menü", href: "/#menu" },
+  { label: "Galerie", href: "/#gallery" },
+  { label: "Favoriten", href: "/#favorites" },
+  { label: "Kontakt", href: "/#contact" },
 ];
 
 export const LogoMark = () => (
@@ -92,7 +92,7 @@ const Header = () => {
           </nav>
 
           <Button as="link" href="/#contact" className="hidden lg:inline-flex">
-            Reserve a Table
+            Tisch reservieren
           </Button>
 
           <button
@@ -140,7 +140,7 @@ const Header = () => {
             </Link>
           ))}
           <Button as="link" href="/#contact" className="mt-2 w-full">
-            Reserve a Table
+            Tisch reservieren
           </Button>
         </nav>
       </div>

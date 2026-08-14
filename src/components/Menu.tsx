@@ -5,25 +5,25 @@ import AnimatedSection from './ui/AnimatedSection';
 
 const MENU_ITEMS = [
   {
-    title: 'Shisha Menu',
-    description: 'Explore our wide range of flavours for every taste.',
-    cta: 'View Shisha Menu',
+    title: 'Shisha Menü',
+    description: 'Entdecke unsere große Auswahl an Shishas und verschiedenen Geschmacksrichtungen.',
+    cta: 'Shisha Menü ansehen',
     href: '#menu',
     src: '/images/about-right-top.png',
     alt: 'Shisha with rising smoke',
   },
   {
-    title: 'Food Menu',
-    description: 'From light bites to signature dishes.',
-    cta: 'View Food Menu',
+    title: 'Speisen',
+    description: 'Von Burgern und Snacks bis hin zu Salaten, Eis und süßen Desserts.',
+    cta: 'Speisekarte ansehen',
     href: '#menu',
     src: '/images/instagram-galerie-img1.jpg',
     alt: 'Signature burger and fries',
   },
   {
-    title: 'Drinks Menu',
-    description: 'Refreshing drinks & creative cocktails.',
-    cta: 'View Drinks Menu',
+    title: 'Getränke',
+    description: 'Cocktails, Longdrinks, Softdrinks, Milkshakes, Kaffee und vieles mehr.',
+    cta: 'Getränkekarte ansehen',
     href: '#menu',
     src: '/images/gallery-img-9.jpg',
     alt: 'Fine dining table with drinks',
@@ -36,10 +36,10 @@ const Menu = () => {
       <Container variant="xl">
         <AnimatedSection direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
-            Our Menu
+            Unser Menü
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">
-            A Taste for Every Mood
+            Für jeden Geschmack das Richtige
           </h2>
           <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
         </AnimatedSection>

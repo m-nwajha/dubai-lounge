@@ -4,7 +4,7 @@ import AnimatedSection from "./ui/AnimatedSection";
 const OFFERINGS = [
   {
     title: "Premium Shisha",
-    subtitle: "Wide range of unique flavours",
+    subtitle: "Vielfältige Sorten für jeden Geschmack",
     icon: (
       <>
         <circle cx="12" cy="4.2" r="1.2" />
@@ -17,8 +17,8 @@ const OFFERINGS = [
     ),
   },
   {
-    title: "Delicious Food",
-    subtitle: "Fresh & tasty dishes made to perfection",
+    title: "Leckere Speisen",
+    subtitle: "Burger, Snacks, Salate & mehr",
     icon: (
       <>
         <path d="M4 15a8 8 0 0 1 16 0" strokeLinecap="round" />
@@ -29,8 +29,8 @@ const OFFERINGS = [
     ),
   },
   {
-    title: "Signature Drinks",
-    subtitle: "Mocktails, cocktails & beverages",
+    title: "Cocktails & Drinks",
+    subtitle: "Cocktails, Longdrinks & Softdrinks",
     icon: (
       <>
         <path
@@ -44,8 +44,8 @@ const OFFERINGS = [
     ),
   },
   {
-    title: "VIP Ambience",
-    subtitle: "Luxury setting for unforgettable moments",
+    title: "Lounge Ambiente",
+    subtitle: "Entspannte Atmosphäre zum Wohlfühlen",
     icon: (
       <path
         d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4L12 3z"
@@ -63,10 +63,10 @@ const Offerings = () => {
       <Container variant="xl">
         <AnimatedSection direction="up" className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
-            What We Offer
+            Was wir bieten
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">
-            Indulge in Our Signature Experience
+            Alles für einen gelungenen Abend
           </h2>
           <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
         </AnimatedSection>
