@@ -19,6 +19,17 @@ const Reservation = () => {
   return (
     <section className="bg-black py-20 sm:py-24">
       <Container variant="xl">
+        <AnimatedSection direction="up" className="text-center mb-[60px]">
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#fbce6b]">
+            Erlebe den Moment
+          </p>
+
+          <h2 className="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">
+            Erlebe unsere Lounge hautnah
+          </h2>
+
+          <div className="mx-auto mt-5 h-px w-16 bg-gradient-to-r from-transparent via-[#fbce6b] to-transparent" />
+        </AnimatedSection>
         <AnimatedSection direction="up" className="gradient-border rounded-2xl">
           <div className="gradient-border__content relative flex min-h-[280px] items-center overflow-hidden rounded-2xl">
             <Image
@@ -37,9 +48,7 @@ const Reservation = () => {
               <h2 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl">
                 Entdecke die Dubai Lounge
                 <br />
-                <span className="font-normal text-white/90">
-                  in 360°
-                </span>
+                <span className="font-normal text-white/90">in 360°</span>
               </h2>
 
               <ul className="mt-5 space-y-2">
