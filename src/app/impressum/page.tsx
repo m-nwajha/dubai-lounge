@@ -11,55 +11,50 @@ export default function ImpressumPage() {
       title="Impressum"
       content={[
         {
-          title: "Angaben gemäß § 5 TMG",
+          title: "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)",
           type: "paragraph",
           paragraph:
-            "Dubai Lounge GmbH\nGoseriede 6\n30159 Hannover\nDeutschland",
-        },
-        {
-          title: "Vertreten durch",
-          type: "paragraph",
-          paragraph: "Geschäftsführer: Ahmed Al-Farsi",
+            "Anbieter\nDubai Lounge\nInhaber: Ali Delkhouaz\nAlbert-Schweitzer-Straße 40, 38226 Salzgitter",
         },
         {
           title: "Kontakt",
           type: "paragraph",
-          paragraph: "Telefon: +49 511 123 456\nE-Mail: info@dubailounge.de",
+          paragraph: "Telefon: 0172 9376230\nE-Mail: info@dubai-lounge.net\nWeb: dubai-lounge.net",
         },
         {
-          title: "Registereintrag",
+          title: "Steuerliche Angaben",
           type: "paragraph",
           paragraph:
-            "Eintragung im Handelsregister.\nRegistergericht: Amtsgericht Hannover\nRegisternummer: HRB 123456",
+            "Steuernummer: wird nachgetragen.",
         },
         {
-          title: "Umsatzsteuer-ID",
+          title: "Verantwortlich für den Inhalt",
+          type: "paragraph",
+          paragraph: "Ali Delkhouaz\nAlbert-Schweitzer-Straße 40, 38226 Salzgitter",
+        },
+        {
+          title: "Verbraucherstreitbeilegung",
           type: "paragraph",
           paragraph:
-            "Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE123456789",
-        },
-        {
-          title: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
-          type: "paragraph",
-          paragraph: "Ahmed Al-Farsi, Goseriede 6, 30159 Hannover",
+            "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
         },
         {
           title: "Haftung für Inhalte",
           type: "paragraph",
           paragraph:
-            "Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+            "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Eine Verpflichtung zur Überwachung übermittelter oder gespeicherter fremder Informationen besteht nur im Rahmen der gesetzlichen Vorschriften.",
         },
         {
           title: "Haftung für Links",
           type: "paragraph",
           paragraph:
-            "Unser Angebot enthält gegebenenfalls Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+            "Unser Angebot kann Links zu externen Websites Dritter enthalten, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter oder Betreiber verantwortlich.",
         },
         {
           title: "Urheberrecht",
           type: "paragraph",
           paragraph:
-            "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+            "Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Jede Verwertung außerhalb der gesetzlich zulässigen Grenzen bedarf der vorherigen Zustimmung des jeweiligen Rechteinhabers.",
         },
       ]}
     />

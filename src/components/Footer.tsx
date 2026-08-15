@@ -138,14 +138,14 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Dubai Lounge</p>
           <p>
             Powered By{' '}
-            <a
+           <a
               href="https://orionlens.net/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#fbce6b] transition-colors hover:text-white"
             >
               OrionLens
-            </a>
+            </a> 
           </p>
         </Container>
       </div>

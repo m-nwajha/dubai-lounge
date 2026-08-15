@@ -1,6 +1,10 @@
+"use client";
+
 import Image from 'next/image';
+import { useState } from 'react';
 import { Container } from './ui/Container';
 import { Button } from './ui/Button';
+import { Modal } from './ui/Modal';
 import AnimatedSection from './ui/AnimatedSection';
 
 const MENU_ITEMS = [
@@ -8,29 +12,31 @@ const MENU_ITEMS = [
     title: 'Shisha Menü',
     description: 'Entdecke unsere große Auswahl an Shishas und verschiedenen Geschmacksrichtungen.',
     cta: 'Shisha Menü ansehen',
-    href: '#menu',
-    src: '/images/about-right-top.png',
+    pdf: '/pdf/shisha.pdf',
+    src: '/images/shisha.jpeg',
     alt: 'Shisha with rising smoke',
   },
   {
     title: 'Speisen',
     description: 'Von Burgern und Snacks bis hin zu Salaten, Eis und süßen Desserts.',
     cta: 'Speisekarte ansehen',
-    href: '#menu',
-    src: '/images/instagram-galerie-img1.jpg',
+    pdf: '/pdf/food.pdf',
+    src: '/images/speisen.jpeg',
     alt: 'Signature burger and fries',
   },
   {
     title: 'Getränke',
     description: 'Cocktails, Longdrinks, Softdrinks, Milkshakes, Kaffee und vieles mehr.',
     cta: 'Getränkekarte ansehen',
-    href: '#menu',
-    src: '/images/gallery-img-9.jpg',
+    pdf: '/pdf/drinks.pdf',
+    src: '/images/getranke.jpeg',
     alt: 'Fine dining table with drinks',
   },
 ];
 
 const Menu = () => {
+  const [activePdf, setActivePdf] = useState<{ title: string; url: string } | null>(null);
+
   return (
     <section className="bg-[#000] py-20" id='menu'>
       <Container variant="xl">
@@ -70,8 +76,8 @@ const Menu = () => {
                     {item.description}
                   </p>
                   <Button
-                    as="link"
-                    href={item.href}
+                    as="button"
+                    onClick={() => setActivePdf({ title: item.title, url: item.pdf })}
                     variant="outline"
                     className="mt-5 px-4 py-2 text-xs"
                   >
@@ -83,6 +89,33 @@ const Menu = () => {
           ))}
         </div>
       </Container>
+
+      <Modal
+        isOpen={!!activePdf}
+        onClose={() => setActivePdf(null)}
+        title={activePdf?.title}
+      >
+        {activePdf && (
+          <object
+            data={`${activePdf.url}#view=FitH`}
+            type="application/pdf"
+            className="h-full w-full rounded-lg border-0 bg-white"
+            title={activePdf.title}
+          >
+            <div className="flex h-full flex-col items-center justify-center p-4 text-center">
+              <p className="text-black/80 mb-4">Dein Browser unterstützt die direkte PDF-Anzeige leider nicht.</p>
+              <a 
+                href={activePdf.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="rounded bg-[#fbce6b] px-4 py-2 font-bold text-black hover:bg-[#e0b555]"
+              >
+                Menü herunterladen / öffnen
+              </a>
+            </div>
+          </object>
+        )}
+      </Modal>
     </section>
   );
 };

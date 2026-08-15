@@ -8,30 +8,19 @@ import { Container } from "./ui/Container";
 import AnimatedSection from "./ui/AnimatedSection";
 
 const GALLERY_ITEMS = [
-  {
-    src: "/images/about-right-top.png",
-    alt: "Shisha with rising smoke",
-  },
-  {
-    src: "/images/instagram-galerie-img1.jpg",
-    alt: "Signature burger and fries",
-  },
-  {
-    src: "/images/gallery-img-9.jpg",
-    alt: "Fine dining table setting",
-  },
-  {
-    src: "/images/about-right-botton.png",
-    alt: "Dubai Lounge seating area",
-  },
-  {
-    src: "/images/unsere-geschichte-img2.png",
-    alt: "Dubai Lounge seating area",
-  },
-  {
-    src: "/images/instagram-galerie-img3.jpg",
-    alt: "Dubai Lounge seating area",
-  },
+  { src: "/images/Galerie/dubai-lounge-salzgitter-ambiente.jpeg", alt: "Dubai Lounge Salzgitter Ambiente" },
+  { src: "/images/Galerie/dubai-lounge-shisha-bar-salzgitter.jpeg", alt: "Dubai Lounge Shisha Bar Salzgitter" },
+  { src: "/images/Galerie/premium-shisha-dubai-lounge.jpeg", alt: "Premium Shisha Dubai Lounge" },
+  { src: "/images/Galerie/dubai-lounge-cocktails-drinks.jpeg", alt: "Dubai Lounge Cocktails und Drinks" },
+  { src: "/images/Galerie/shisha-cafe-salzgitter-interior.jpeg", alt: "Shisha Cafe Salzgitter Interior" },
+  { src: "/images/Galerie/dubai-lounge-speisen-snacks.jpeg", alt: "Dubai Lounge Speisen und Snacks" },
+  { src: "/images/Galerie/entspannte-atmosphare-dubai-lounge.jpeg", alt: "Entspannte Atmosphäre in der Dubai Lounge" },
+  { src: "/images/Galerie/dubai-lounge-vip-bereich.jpeg", alt: "Dubai Lounge VIP Bereich" },
+  { src: "/images/Galerie/shisha-geschmack-sorten.jpeg", alt: "Verschiedene Shisha Geschmack Sorten" },
+  { src: "/images/Galerie/dubai-lounge-salzgitter-aussenbereich.jpeg", alt: "Dubai Lounge Salzgitter Außenbereich" },
+  { src: "/images/Galerie/leckere-drinks-cocktailbar.jpeg", alt: "Leckere Drinks an der Cocktailbar" },
+  { src: "/images/Galerie/dubai-lounge-event-location.jpeg", alt: "Dubai Lounge als Event Location" },
+  { src: "/images/Galerie/shisha-lounge-niedersachsen.jpeg", alt: "Shisha Lounge Niedersachsen" },
 ];
 
 const Gallery = () => {
