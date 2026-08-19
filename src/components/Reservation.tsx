@@ -83,7 +83,7 @@ const Reservation = () => {
       >
         <div className="relative h-full w-full overflow-hidden rounded-xl">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!4v1786536925409!6m8!1m7!1sCAoSHENJQUJJaEFVazNGWGR6S1VzenFoSTg4T0VTOVg.!2m2!1d52.05132799133439!2d10.37232626525516!3f59.16398!4f0!5f0.7820865974627469"
+            src="https://www.google.com/maps/embed?pb=!4v1787154745198!6m8!1m7!1sCAoSHENJQUJJaEFCR2xPdzFLekQybHlIcG5sOFNSeng.!2m2!1d52.1546134!2d10.3276479!3f284.7312253127906!4f-7.2957649017584885!5f0.6556821664424943"
             title="Dubai Lounge 360° panorama"
             className="absolute inset-0 h-full w-full border-0"
             loading="lazy"
