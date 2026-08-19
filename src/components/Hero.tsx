@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import { Container } from "./ui/Container";
 import { Button } from "./ui/Button";
 import { CN } from "@/utils/className";
+import { Modal } from "./ui/Modal";
+import { useState } from "react";
 
 const FEATURES = [
   {
@@ -64,6 +67,8 @@ const FeatureIcon = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Hero = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <section className="relative flex min-h-[100svh] w-full flex-col justify-center overflow-hidden bg-black pt-24 pb-14 sm:pt-28">
       <Image
@@ -103,9 +108,8 @@ const Hero = () => {
               Tisch reservieren
             </Button>
             <Button
-              as="link"
-              href="/pdf/complete-menu.pdf"
-              target="_blank"
+              as="button"
+              onClick={() => setIsMenuOpen(true)}
               variant="outline"
               className="px-8"
             >
@@ -137,6 +141,32 @@ const Hero = () => {
           </div>
         </div>
       </Container>
+      <Modal
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+        title="Menü entdecken"
+      >
+        <object
+          data={`/pdf/complete-menu.pdf#view=FitH`}
+          type="application/pdf"
+          className="h-full w-full rounded-lg border-0 bg-white"
+          title="Menü entdecken"
+        >
+          <div className="flex h-full flex-col items-center justify-center p-4 text-center">
+            <p className="text-black/80 mb-4">
+              Dein Browser unterstützt die direkte PDF-Anzeige leider nicht.
+            </p>
+            <a
+              href="/pdf/complete-menu.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded bg-[#fbce6b] px-4 py-2 font-bold text-black hover:bg-[#e0b555]"
+            >
+              Menü herunterladen / öffnen
+            </a>
+          </div>
+        </object>
+      </Modal>
     </section>
   );
 };

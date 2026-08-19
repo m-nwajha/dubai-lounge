@@ -1,21 +1,23 @@
-import Link from 'next/link';
-import { Container } from './ui/Container';
-import { LogoMark } from './Header';
+import Link from "next/link";
+import { Container } from "./ui/Container";
+
+import Logo from "./ui/Logo";
 
 const WORKING_HOURS = [
-  { days: 'Info', hours: 'Bitte die tatsächlichen Öffnungszeiten eintragen' },
+  { days: "So. – Do.:", hours: "09:00 bis 01:00 Uhr" },
+  { days: "Fr. – Sa.:", hours: "09:00 bis 05:00 Uhr" },
 ];
 
 const LEGAL_LINKS = [
-  { label: 'Impressum', href: '/impressum' },
-  { label: 'Datenschutzerklärung', href: '/datenschutz' },
-  { label: 'AGB', href: '/AGB' },
+  { label: "Impressum", href: "/impressum" },
+  { label: "Datenschutzerklärung", href: "/datenschutz" },
+  { label: "AGB", href: "/AGB" },
 ];
 
 const SOCIAL_LINKS = [
   {
-    label: 'Instagram',
-    href: '#',
+    label: "Instagram",
+    href: "#",
     icon: (
       <>
         <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
@@ -25,20 +27,20 @@ const SOCIAL_LINKS = [
     ),
   },
   {
-    label: 'Facebook',
-    href: '#',
+    label: "Facebook",
+    href: "#",
     icon: (
       <path d="M14 21v-7h2.5l.5-3H14V9c0-.9.3-1.5 1.6-1.5H17V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8.5v3H11v7h3z" />
     ),
   },
   {
-    label: 'X',
-    href: '#',
+    label: "X",
+    href: "#",
     icon: <path d="M5 5l14 14M19 5L5 19" strokeLinecap="round" />,
   },
   {
-    label: 'WhatsApp',
-    href: '#',
+    label: "WhatsApp",
+    href: "#",
     icon: (
       <>
         <path d="M7 17l-1.2 3.2L9 19a7.5 7.5 0 1 0-3.4-2.9" />
@@ -54,17 +56,10 @@ const Footer = () => {
       <Container variant="xl" className="py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link href="/" className="flex items-center gap-2">
-              <LogoMark />
-              <span className="flex flex-col leading-none">
-                <span className="text-xl font-bold tracking-wide text-[#fbce6b]">DUBAI</span>
-                <span className="text-[10px] font-medium tracking-[0.4em] text-[#81632f]">
-                  LOUNGE
-                </span>
-              </span>
-            </Link>
+            <Logo />
             <p className="mt-4 max-w-xs text-[0.9rem] leading-relaxed text-white/50">
-              Deine Lounge in Salzgitter für Shisha, Drinks, leckere Speisen und entspannte Abende in stilvollem Ambiente.
+              Deine Lounge in Salzgitter für Shisha, Drinks, leckere Speisen und
+              entspannte Abende in stilvollem Ambiente.
             </p>
           </div>
 
@@ -83,7 +78,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-[0.9rem] font-bold uppercase tracking-wide text-[#fbce6b]">Nützliche Links</p>
+            <p className="text-[0.9rem] font-bold uppercase tracking-wide text-[#fbce6b]">
+              Nützliche Links
+            </p>
             <ul className="mt-4 space-y-3">
               {LEGAL_LINKS.map((link) => (
                 <li key={link.label}>
@@ -99,7 +96,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-[0.9rem] font-bold uppercase tracking-wide text-[#fbce6b]">Kontakt</p>
+            <p className="text-[0.9rem] font-bold uppercase tracking-wide text-[#fbce6b]">
+              Kontakt
+            </p>
             <ul className="mt-4 space-y-3 text-[0.9rem] text-white/50">
               <li>Albert-Schweitzer-Straße 40, 38226 Salzgitter</li>
               <li>0172 9376230</li>
@@ -137,15 +136,15 @@ const Footer = () => {
         >
           <p>&copy; {new Date().getFullYear()} Dubai Lounge</p>
           <p>
-            Powered By{' '}
-           <a
+            Powered By{" "}
+            <a
               href="https://orionlens.net/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#fbce6b] transition-colors hover:text-white"
             >
               OrionLens
-            </a> 
+            </a>
           </p>
         </Container>
       </div>

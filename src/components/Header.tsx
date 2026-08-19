@@ -6,6 +6,7 @@ import { CN } from "@/utils/className";
 import { Container } from "./ui/Container";
 import { Box } from "./ui/Box";
 import { Button } from "./ui/Button";
+import Logo from "./ui/Logo";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -15,25 +16,6 @@ const NAV_LINKS = [
   { label: "Favoriten", href: "/#favorites" },
   { label: "Kontakt", href: "/#contact" },
 ];
-
-export const LogoMark = () => (
-  <svg
-    viewBox="0 0 32 40"
-    className="h-8 w-auto shrink-0 text-[#fbce6b]"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.4"
-  >
-    <path
-      d="M7 39V16.5C7 13 9 9 12 9c2.2 0 3.5 1.6 3.5 4v1"
-      strokeLinecap="round"
-    />
-    <path d="M25 39V19c0-4-2.3-7-6-7" strokeLinecap="round" />
-    <circle cx="12" cy="6" r="2.2" />
-    <circle cx="19" cy="9" r="1.6" />
-    <path d="M2 39h28" strokeLinecap="round" />
-  </svg>
-);
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,17 +46,7 @@ const Header = () => {
           alignItems="center"
           className="h-25"
         >
-          <Link href="/" className="flex items-center gap-2">
-            <LogoMark />
-            <span className="flex flex-col leading-none">
-              <span className="text-xl font-bold tracking-wide text-[#fbce6b]">
-                DUBAI
-              </span>
-              <span className="text-[10px] font-medium tracking-[0.4em] text-[#81632f]">
-                LOUNGE
-              </span>
-            </span>
-          </Link>
+          <Logo />
 
           <nav className="hidden lg:flex lg:items-center lg:gap-6">
             {NAV_LINKS.map((link) => (
